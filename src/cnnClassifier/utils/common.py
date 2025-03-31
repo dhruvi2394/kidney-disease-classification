@@ -10,7 +10,17 @@ from pathlib import Path
 from typing import Any
 import base64
 
+<<<<<<< HEAD
 
+=======
+# below 6 lines are added by me 
+def read_yaml(path_to_yaml: str):
+    path_to_yaml = os.path.abspath(path_to_yaml)  # Convert to absolute path
+    if not os.path.exists(path_to_yaml):
+        raise FileNotFoundError(f"YAML file not found: {path_to_yaml}")
+    with open(path_to_yaml, "r", encoding="utf-8") as yaml_file:
+        return yaml.safe_load(yaml_file)
+>>>>>>> 7b40c17 (data ingestion)
 
 @ensure_annotations
 def read_yaml(path_to_yaml: Path) -> ConfigBox:
@@ -27,7 +37,11 @@ def read_yaml(path_to_yaml: Path) -> ConfigBox:
         ConfigBox: ConfigBox type
     """
     try:
+<<<<<<< HEAD
         with open(path_to_yaml) as yaml_file:
+=======
+        with open(path_to_yaml, encoding="utf-8") as yaml_file:
+>>>>>>> 7b40c17 (data ingestion)
             content = yaml.safe_load(yaml_file)
             logger.info(f"yaml file: {path_to_yaml} loaded successfully")
             return ConfigBox(content)
@@ -122,7 +136,11 @@ def get_size(path: Path) -> str:
         str: size in KB
     """
     size_in_kb = round(os.path.getsize(path)/1024)
+<<<<<<< HEAD
     return f"~ {size_in_kb} KB"
+=======
+    return f"{size_in_kb} KB"
+>>>>>>> 7b40c17 (data ingestion)
 
 
 def decodeImage(imgstring, fileName):
