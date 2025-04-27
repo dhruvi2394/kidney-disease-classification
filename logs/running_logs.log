@@ -24,3 +24,27 @@ x==========x]
 [2025-04-27 20:03:22,710: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
 
 x==========x]
+[2025-04-27 22:28:11,965: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-27 22:28:11,986: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-27 22:28:11,995: INFO: common: created directory at: artifacts]
+[2025-04-27 22:28:12,002: INFO: common: created directory at: artifacts\training]
+[2025-04-27 22:46:47,347: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-04-27 22:46:47,353: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-27 22:46:47,362: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-27 22:46:47,364: INFO: common: created directory at: artifacts]
+[2025-04-27 22:46:47,366: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-04-27 22:46:47,368: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1CdJMbfaOZ7WN6bG_PkXwV7cjvdIs0Mpb/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-04-27 22:48:01,696: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1CdJMbfaOZ7WN6bG_PkXwV7cjvdIs0Mpb/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-04-27 22:48:03,287: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-04-27 22:48:03,287: INFO: main: *******************]
+[2025-04-27 22:48:03,288: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2025-04-27 22:48:03,295: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-27 22:48:03,300: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-27 22:48:03,301: INFO: common: created directory at: artifacts]
+[2025-04-27 22:48:03,302: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-04-27 22:48:04,309: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-04-27 22:48:05,093: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
